@@ -12,6 +12,7 @@
 
 <style lang="scss">
   @use './scss/utilities/variables' as vars;
+
   .app {
     background-color: vars.$white;
   }
