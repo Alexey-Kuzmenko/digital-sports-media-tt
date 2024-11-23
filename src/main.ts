@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import TheHeader from './components/TheHeader.vue';
+import AppHeader from './components/AppHeader.vue';
 
 const app = createApp(App);
 
-app.component('TheHeader', TheHeader)
+app.component('AppHeader', AppHeader)
 app.mount('#app');

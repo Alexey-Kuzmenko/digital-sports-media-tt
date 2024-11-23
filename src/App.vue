@@ -2,23 +2,30 @@
 </script>
 
 <template>
-  <TheHeader/>
+  <AppHeader />
   <main class="main">
-    <div class="container">
-
-    </div>
+    <Container>
+      <Breadcrumbs />
+    </Container>
   </main>
 </template>
 
-<style lang="scss">
-  @use './scss/utilities/variables' as vars;
+<script lang="ts">
+import AppContainer from './components/AppContainer.vue';
+import AppBreadcrumbs from './components/AppBreadcrumbs.vue';
 
-  .app {
-    background-color: vars.$white;
+export default {
+  components: {
+    'Breadcrumbs': AppBreadcrumbs,
+    'Container': AppContainer
   }
-  
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
+}
+</script>
+
+<style lang="scss">
+@use './scss/utilities/variables' as vars;
+
+.app {
+  background-color: vars.$white;
+}
 </style>
