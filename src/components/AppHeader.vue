@@ -31,19 +31,29 @@
         </a>
       </div>
     </nav>
+    <NavbarBottom />
   </header>
 </template>
+
+<script lang="ts">
+import AppNavbarBottom from './AppNavbarBottom.vue';
+
+export default {
+  components: {
+    'NavbarBottom': AppNavbarBottom
+  }
+}
+</script>
 
 <style lang="scss">
 @use '../scss/utilities/variables' as vars;
 @use '../scss/utilities/placeholders';
 
 .header {
-  padding: 6px;
-
   background-color: vars.$black;
 
   .navbar {
+    padding: 12px 6px;
     display: flex;
     align-items: center;
 
@@ -86,6 +96,7 @@
     }
 
     @media (width >=vars.$lg) {
+
       &__burger,
       &__user-news,
       &__notifications,
