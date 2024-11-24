@@ -3,7 +3,9 @@
         <ul class="breadcrumbs__list">
             <li class="breadcrumbs__list-item">
                 <a href="#" class="breadcrumbs__list-link breadcrumbs__list-link_current">Головна</a>
-                <i class="fa-solid fa-chevron-right" style=" color: #9E9E9E; font-size: 10px;" />
+                <i class="fa-solid fa-chevron-right" style=" color: #9E9E9E;
+
+ font-size: 10px;" />
             </li>
             <li class="breadcrumbs__list-item">
                 <a href="#" class="breadcrumbs__list-link">Футбол</a>

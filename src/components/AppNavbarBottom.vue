@@ -15,15 +15,17 @@
 @use '../scss/utilities/variables' as vars;
 
 .navbar-bottom {
-    border-bottom: 1px solid vars.$light-grey;
     display: none;
+
+    border-bottom: 1px solid vars.$light-grey;
     background-color: vars.$white;
 
     &__list {
-        margin: 0 auto !important;
         display: flex;
+
         width: 100%;
         max-width: calc(vars.$xxl + 40px);
+        margin: 0 auto !important;
         padding: 0 6px;
     }
 
@@ -32,25 +34,32 @@
 
         &_title {
             position: relative;
+
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
+
             margin-right: 10px;
 
             &::after {
-                content: '';
+                position: absolute;
+                top: calc(50% - 6px);
+                right: 0;
+
                 display: block;
+
                 width: 1px;
                 height: 12px;
-                position: absolute;
-                right: 0;
-                top: calc(50% - 6px);
-                background: rgba(95, 120, 137, .16);
+
+                content: '';
+
+                background: rgb(95 120 137 / 16%);
             }
 
             & > a {
-                color: vars.$black;
                 text-transform: uppercase;
+
+                color: vars.$black;
             }
         }
     }
@@ -60,9 +69,10 @@
     }
 
     &__link {
-        font-weight: 400;
+        color: rgba($color: #000, $alpha: 70%);
+
         font-size: 0.875rem;
-        color: rgba($color: #000000, $alpha: 0.7);
+        font-weight: 400;
     }
 
 

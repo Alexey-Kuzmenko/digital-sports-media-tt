@@ -53,13 +53,13 @@ export default {
   background-color: vars.$black;
 
   .navbar {
-    padding: 12px 6px;
     display: flex;
     align-items: center;
 
     width: 100%;
     max-width: calc(vars.$xxl + 40px);
     margin: 0 auto;
+    padding: 12px 6px;
 
     &__controls {
       display: flex;
@@ -96,7 +96,6 @@ export default {
     }
 
     @media (width >=vars.$lg) {
-
       &__burger,
       &__user-news,
       &__notifications,

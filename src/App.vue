@@ -6,6 +6,7 @@
   <main class="main">
     <Container>
       <Breadcrumbs />
+      <TournamentHead />
     </Container>
   </main>
 </template>
@@ -13,11 +14,13 @@
 <script lang="ts">
 import AppContainer from './components/AppContainer.vue';
 import AppBreadcrumbs from './components/AppBreadcrumbs.vue';
+import AppTournamentHead from './components/AppTournamentHead.vue';
 
 export default {
   components: {
     'Breadcrumbs': AppBreadcrumbs,
-    'Container': AppContainer
+    'Container': AppContainer,
+    'TournamentHead': AppTournamentHead
   }
 }
 </script>
