@@ -14,3 +14,12 @@
     border-radius: 6px;
     transition: background-color .2s ease;
 }
+
+%h2-title {
+    margin-bottom: 16px;
+
+    color: rgba($color: #000, $alpha: 90%);
+
+    font-size: 1.125rem;
+    font-weight: 700
+}

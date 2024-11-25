@@ -1,18 +1,21 @@
 <template>
     <aside class="aside">
-        <MainNews />
-        <Trends />
+        <AppMainNews />
+        <AppTrends />
+        <AppVideo />
     </aside>
 </template>
 
 <script lang="ts">
 import AppMainNews from './AppMainNews.vue';
 import AppTrends from './AppTrends.vue';
+import AppVideo from './AppVideo.vue';
 
 export default {
     components: {
-        'MainNews': AppMainNews,
-        'Trends': AppTrends
+        AppMainNews,
+        AppTrends,
+        AppVideo
     }
 }
 </script>

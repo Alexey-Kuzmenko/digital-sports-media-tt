@@ -23,16 +23,13 @@
 </template>
 
 <style lang="scss">
+@use '../scss/utilities/placeholders';
+
 .trends {
     margin-top: 40px;
 
     &__title {
-        margin-bottom: 16px;
-
-        color: rgba($color: #000, $alpha: 90%);
-
-        font-size: 1.125rem;
-        font-weight: 700
+        @extend %h2-title
     }
 
     &__links {

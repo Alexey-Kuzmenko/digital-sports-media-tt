@@ -4,13 +4,13 @@
 <template>
   <AppHeader />
   <main class="main">
-    <Container>
-      <Breadcrumbs />
-      <TournamentHead />
-      <Aside>
+    <AppContainer>
+      <AppBreadcrumbs />
+      <AppTournamentHead />
+      <AppAside>
         1
-      </Aside>
-    </Container>
+      </AppAside>
+    </AppContainer>
   </main>
 </template>
 
@@ -23,10 +23,10 @@ import AppAside from './components/AppAside.vue';
 
 export default {
   components: {
-    'Breadcrumbs': AppBreadcrumbs,
-    'Container': AppContainer,
-    'TournamentHead': AppTournamentHead,
-    'Aside': AppAside
+    AppBreadcrumbs,
+    AppContainer,
+    AppTournamentHead,
+    AppAside
   }
 }
 </script>

@@ -28,17 +28,13 @@
 
 <style lang="scss">
 @use '../scss/utilities/variables' as vars;
+@use '../scss/utilities/placeholders';
 
 .main-news {
     margin-top: 32px;
 
     &__title {
-        margin-bottom: 16px;
-
-        color: rgba($color: #000, $alpha: 90%);
-
-        font-size: 1.125rem;
-        font-weight: 700
+        @extend %h2-title
     }
 
     &__items {
