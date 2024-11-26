@@ -10,6 +10,7 @@
         <div class="tournament-wrapper">
           <AppTournamentHead />
           <AppTournament />
+          <AppTournamentInfo />
         </div>
         <AppAside />
       </AppGridLayout>
@@ -24,6 +25,7 @@ import AppTournamentHead from './components/AppTournamentHead.vue';
 import AppAside from './components/AppAside.vue';
 import AppTournament from './components/AppTournament.vue';
 import AppGridLayout from './components/AppGridLayout.vue';
+import AppTournamentInfo from './components/AppTournamentInfo.vue';
 
 
 export default {
@@ -33,6 +35,7 @@ export default {
     AppBreadcrumbs,
     AppTournamentHead,
     AppTournament,
+    AppTournamentInfo,
     AppAside
   }
 }

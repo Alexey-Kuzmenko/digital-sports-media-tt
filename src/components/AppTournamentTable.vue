@@ -129,10 +129,11 @@
 .table {
     display: block;
     overflow-x: scroll;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
 
     width: 100%;
     margin: 16px auto 0;
+
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 16%);
 
     font-size: 0.75rem;
 
@@ -187,10 +188,13 @@
 
             width: 100%;
             padding: 7px 12px;
+
             border-bottom: 1px solid vars.$light-grey;
         }
 
         &-place {
+            position: relative;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -203,13 +207,13 @@
 
             font-size: 0.938rem;
             font-weight: 400;
-            position: relative;
 
             &_promo-green {
                 background-color: vars.$green;
 
                 &:hover .tooltip {
                     visibility: visible;
+
                     opacity: 1;
                 }
             }
@@ -300,29 +304,37 @@
 }
 
 .tooltip {
-    visibility: hidden;
-    width: 110px;
-    background-color: vars.$grey;
-    color: vars.$white;
-    text-align: center;
-    border-radius: 3px;
-    padding: 8px;
     position: absolute;
     z-index: 1;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
     top: 130%;
     left: 235%;
-    font-weight: 400;
+
+    visibility: hidden;
+
+    width: 110px;
+    margin-left: -60px;
+    padding: 8px;
+
+    transition: opacity 0.3s;
+    text-align: center;
+
+    opacity: 0;
+    color: vars.$white;
+    border-radius: 3px;
+    background-color: vars.$grey;
+
     font-size: 12px;
+    font-weight: 400;
 
     &::after {
-        content: "";
         position: absolute;
         bottom: 100%;
         left: 15%;
+
         margin-left: -5px;
+
+        content: "";
+
         border-width: 5px;
         border-style: solid;
         border-color: vars.$grey transparent transparent transparent;
