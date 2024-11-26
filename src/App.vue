@@ -7,9 +7,8 @@
     <AppContainer>
       <AppBreadcrumbs />
       <AppTournamentHead />
-      <AppAside>
-        1
-      </AppAside>
+      <AppTournament />
+      <AppAside />
     </AppContainer>
   </main>
 </template>
@@ -19,13 +18,15 @@ import AppContainer from './components/AppContainer.vue';
 import AppBreadcrumbs from './components/AppBreadcrumbs.vue';
 import AppTournamentHead from './components/AppTournamentHead.vue';
 import AppAside from './components/AppAside.vue';
+import AppTournament from './components/AppTournament.vue';
 
 
 export default {
   components: {
-    AppBreadcrumbs,
     AppContainer,
+    AppBreadcrumbs,
     AppTournamentHead,
+    AppTournament,
     AppAside
   }
 }

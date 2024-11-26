@@ -7,7 +7,9 @@
             </h2>
         </div>
         <div class="video__preview">
-            <img src="../assets/images/video_cover.png" alt="Video cover" class="video__preview-cover">
+            <a href="#">
+                <img src="../assets/images/video_cover.png" alt="Video cover" class="video__preview-cover">
+            </a>
         </div>
     </section>
 </template>
@@ -35,6 +37,10 @@
                 @extend %h2-title;
             }
         }
+    }
+
+    &__preview-cover {
+        margin: 0 auto;
     }
 }
 </style>
