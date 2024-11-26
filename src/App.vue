@@ -6,9 +6,13 @@
   <main class="main">
     <AppContainer>
       <AppBreadcrumbs />
-      <AppTournamentHead />
-      <AppTournament />
-      <AppAside />
+      <AppGridLayout>
+        <div class="tournament-wrapper">
+          <AppTournamentHead />
+          <AppTournament />
+        </div>
+        <AppAside />
+      </AppGridLayout>
     </AppContainer>
   </main>
 </template>
@@ -19,11 +23,13 @@ import AppBreadcrumbs from './components/AppBreadcrumbs.vue';
 import AppTournamentHead from './components/AppTournamentHead.vue';
 import AppAside from './components/AppAside.vue';
 import AppTournament from './components/AppTournament.vue';
+import AppGridLayout from './components/AppGridLayout.vue';
 
 
 export default {
   components: {
     AppContainer,
+    AppGridLayout,
     AppBreadcrumbs,
     AppTournamentHead,
     AppTournament,
@@ -37,5 +43,9 @@ export default {
 
 .app {
   background-color: vars.$white;
+}
+
+.tournament-wrapper {
+  grid-area: tournament;
 }
 </style>

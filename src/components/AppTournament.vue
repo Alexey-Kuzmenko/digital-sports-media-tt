@@ -12,6 +12,8 @@
                 </div>
             </div>
             <AppTournamentTable />
+            <AppTournamentTable />
+            <AppTournamentTable />
         </div>
     </div>
 </template>
