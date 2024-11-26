@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body,
 h1,
 h2,
@@ -19,6 +23,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+body {
+  font-family: "Roboto";
 }
 
 ul[class],
